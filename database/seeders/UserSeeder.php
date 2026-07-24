@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         // Admin User 1
         User::create([
             'name' => 'Super Admin',
-            'email' => 'su@finkita.com',
+            'email' => 'su@finkita.web.id',
             'password' => Hash::make('Password123'),
             'role' => 'SU',
             'provider' => 'CREDENTIALS',
@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
         // Admin User 2
         User::create([
             'name' => 'System Admin',
-            'email' => 'admin@finkita.com',
+            'email' => 'admin@finkita.web.id',
             'password' => Hash::make('Password123'),
             'role' => 'ADMIN',
             'provider' => 'CREDENTIALS',
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
         // Regular User
         User::create([
             'name' => 'Regular User',
-            'email' => 'user@finkita.com',
+            'email' => 'user@finkita.web.id',
             'password' => Hash::make('Password123'),
             'role' => 'USER',
             'provider' => 'CREDENTIALS',
