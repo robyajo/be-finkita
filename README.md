@@ -10,11 +10,11 @@ GitHub Repository: [https://github.com/robyajo/be-finkita](https://github.com/ro
 
 The database seeder automatically configures three user accounts with different roles and permissions.
 
-| Name | Email | Password | Role | Provider |
-| :--- | :--- | :--- | :--- | :--- |
-| **Super Admin** | `su@finkita.com` | `Password123` | `SU` | `CREDENTIALS` |
-| **System Admin** | `admin@finkita.com` | `Password123` | `ADMIN` | `CREDENTIALS` |
-| **Regular User** | `user@finkita.com` | `Password123` | `USER` | `CREDENTIALS` |
+| Name | Email | Password | Role | Provider | Avatar |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Super Admin** | `su@finkita.web.id` | `Password123` | `SU` | `CREDENTIALS` | [Adventurer (su)](https://api.dicebear.com/7.x/adventurer/svg?seed=su) |
+| **System Admin** | `admin@finkita.web.id` | `Password123` | `ADMIN` | `CREDENTIALS` | [Adventurer (admin)](https://api.dicebear.com/7.x/adventurer/svg?seed=admin) |
+| **Regular User** | `user@finkita.web.id` | `Password123` | `USER` | `CREDENTIALS` | [Adventurer (user)](https://api.dicebear.com/7.x/adventurer/svg?seed=user) |
 
 ---
 
