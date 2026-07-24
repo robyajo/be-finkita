@@ -45,6 +45,7 @@ class AppServiceProvider extends ServiceProvider
             $openApi->secure(
                 SecurityScheme::http('bearer')
             );
+            $openApi->info->description = 'For more details and seeded credentials, please see the [README.md](https://github.com/robyajo/be-finkita) in the repository.';
         });
     }
 
