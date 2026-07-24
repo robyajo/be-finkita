@@ -30,6 +30,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Automatically generate Passport keys if they do not exist (useful for deployment)
+        if (! file_exists(storage_path('oauth-private.key')) || ! file_exists(storage_path('oauth-public.key'))) {
+            try {
+                \Illuminate\Support\Facades\Artisan::call('passport:keys', [
+                    '--force' => true,
+                ]);
+            } catch (\Throwable $e) {
+                \Illuminate\Support\Facades\Log::error('Failed to generate Passport keys during boot: ' . $e->getMessage());
+            }
+        }
+
         // Passport::loadKeysFrom(__DIR__ . '/../secrets/oauth');
 
         Passport::tokensExpireIn(CarbonInterval::days(15));
