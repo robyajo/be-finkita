@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('Password123'),
             'role' => 'SU',
             'provider' => 'CREDENTIALS',
+            'avatar' => 'https://api.dicebear.com/7.x/adventurer/svg?seed=su',
             'email_verified_at' => now(),
             'has_password' => true,
         ]);
@@ -32,6 +33,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('Password123'),
             'role' => 'ADMIN',
             'provider' => 'CREDENTIALS',
+            'avatar' => 'https://api.dicebear.com/7.x/adventurer/svg?seed=admin',
             'email_verified_at' => now(),
             'has_password' => true,
         ]);
@@ -43,6 +45,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('Password123'),
             'role' => 'USER',
             'provider' => 'CREDENTIALS',
+            'avatar' => 'https://api.dicebear.com/7.x/adventurer/svg?seed=user',
             'email_verified_at' => now(),
             'has_password' => true,
         ]);
