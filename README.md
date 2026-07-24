@@ -66,3 +66,21 @@ The API endpoints are fully documented using **Scramble** (an OpenAPI documentat
    ```bash
    php artisan serve
    ```
+
+---
+
+## Production Deployment Notes
+
+Since the OAuth cryptographic keys are not committed for security, they must be generated on the production server.
+
+1. Navigate to the project directory on your production server.
+2. Run the key generation command:
+   ```bash
+   php artisan passport:keys
+   ```
+3. Set proper read/write file permissions for the generated keys so they can be read by your web server (e.g. `www-data` or PHP process user):
+   ```bash
+   chmod 600 storage/oauth-private.key
+   chmod 600 storage/oauth-public.key
+   ```
+
