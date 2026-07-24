@@ -15,11 +15,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $this->call([
+            UserSeeder::class,
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        \Illuminate\Support\Facades\Artisan::call('passport:client', [
+            '--personal' => true,
+            '--name' => 'Finkita Personal Access Client',
+            '--no-interaction' => true,
         ]);
     }
 }

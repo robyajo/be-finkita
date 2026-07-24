@@ -25,3 +25,5 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+client_secret_*.json
+client_secret*.json
